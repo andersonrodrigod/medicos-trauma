@@ -1,0 +1,218 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    background-color: rgb(0, 84, 184);
+}
+
+nav ul {
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.4em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.escala-medica-container {
+    display: flex;
+    justify-content: center;
+}
+
+.escala-medica h1 {
+    text-align: center;
+}
+
+.tabelas-medicas-semana {
+    display: flex;
+    border: solid 1px black;
+    margin-top: 35px;
+}
+
+.dia-semana {
+    width: 160px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.298);
+}
+
+.dia-semana h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.422);
+    height: 30px;
+}
+
+.dia-semana ul {
+    margin-top: 5px;
+}
+
+.dia-semana ul li {
+    list-style: none;
+    height: 25px;
+}
+
+
+.add-medico-container {
+    display: flex;
+    justify-content: center;
+}
+
+.add-medico-title {
+    text-align: center;
+}
+
+.add-medico {
+    margin-top: 35px;
+}
+
+.add-medico form {
+    border: solid 1px black;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 700px;
+}
+
+.head-trio {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.head-medico{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px
+}
+
+.head-medico input {
+    height: 30px;
+    width: 300px;
+}
+
+.head-especialidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px
+}
+
+.head-especialidade label {
+    margin-top: 5px;
+}
+
+.head-especialidade select {
+    height: 30px;
+    width: 175px;
+}
+
+.head-especialidade select {
+    text-align: center;
+}
+
+.head-especialidade select option {
+    text-align: start;
+}
+
+.head-turno {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px
+}
+
+.head-turno label {
+    margin-top: 5px;
+}
+
+.head-turno select {
+    height: 30px;
+    width: 100px;
+}
+
+.head-dia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: solid 1px black;
+    padding: 10px 10px 10px 10px
+}
+
+.head-dia-acording {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-dia-acording input {
+    transform: scale(1.5)
+}
+
+.head-dia div select {
+    margin-top: 10px;
+}
+
+.btn-add-medico-container {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btn-add-medico {
+    width: 100%;
+    height: 40px;
+}
+
+.container-auth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:70vh;
+}
+
+.container-auth h1 {
+    text-align: center;
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border: solid 1px black;
+    width: 400px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.auth form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+}
+
+.auth form div input {
+    font-size: 1.1em;
+    width: 250px;
+    height: 30px;
+    color: black;
+}
+

@@ -1,0 +1,282 @@
+<div class="escala-medica-container">
+    <div class="escala-medica">
+        <h1>Escala Médica</h1>
+        <div class="tabelas-medicas-semana">
+            <div class="dia-semana">
+                <h2>Domingo</h2>
+                <ul>
+                {{#each medicosDay.sunday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Segunda</h2>
+                <ul>
+                {{#each medicosDay.monday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Terça</h2>
+                <ul>
+                {{#each medicosDay.tuesday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quarta</h2>
+                <ul>
+                {{#each medicosDay.wednesday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quinta</h2>
+                <ul>
+                {{#each medicosDay.thursday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sexta</h2>
+                <ul>
+                {{#each medicosDay.friday}}
+                    <li>{{this.name}} ({{#if (eq this.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sábado</h2>
+                <ul>
+                {{#each medicosDay.saturday}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="tabelas-medicas-semana">
+            <div class="dia-semana">
+                <h2>Domingo</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "sunday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Segunda</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "monday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Terça</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "tuesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quarta</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "wednesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quinta</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "thursday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sexta</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "friday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sábado</h2>
+                <ul>
+                {{#each medicosTurn.morning}}
+                    {{#if (eq this.dayOfWeek "saturday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+        </div>	
+
+        <div class="tabelas-medicas-semana">
+            <div class="dia-semana">
+                <h2>Domingo</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "sunday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Segunda</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "monday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Terça</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "tuesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quarta</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "wednesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quinta</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "thursday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sexta</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "friday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sábado</h2>
+                <ul>
+                {{#each medicosTurn.afternoon}}
+                    {{#if (eq this.dayOfWeek "saturday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+        </div>	
+
+        <div class="tabelas-medicas-semana">
+            <div class="dia-semana">
+                <h2>Domingo</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "sunday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Segunda</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "monday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Terça</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "tuesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quarta</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "wednesday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Quinta</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "thursday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sexta</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "friday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+            <div class="dia-semana">
+                <h2>Sábado</h2>
+                <ul>
+                {{#each medicosTurn.night}}
+                    {{#if (eq this.dayOfWeek "saturday")}}
+                    <li>{{this.name}} ({{#if (eq doctor.frequency "weekly")}}S{{else}}Q{{/if}})</li>
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+        </div>	
+    </div>
+</div>

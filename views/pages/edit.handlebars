@@ -1,0 +1,140 @@
+<div class="add-medico-container">
+    <div class="add-medico">
+        <div class="add-medico-title">
+            <h1>Adiconar Médicos</h1>
+        </div>
+        <form action="" method="post">
+            <input type="hidden" name="id" value="{{medicosEncontrado.id}}">
+            <div class="head-trio">
+                <div class="head-medico">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" value="{{medicosEncontrado.name}}" placeholder="Nome do médico" required>
+                </div>
+                <div class="head-especialidade">
+                    <label for="speciality">Especialidade</label>
+                    <select name="speciality">
+                        <option>Selecione Especialidade</option>
+                        <option value="overall" {{#if (eq medicosEncontrado.speciality "overall")}}selected{{/if}}>Geral </option>
+                        <option value="arm" {{#if (eq medicosEncontrado.speciality "arm")}}selected{{/if}}>Braço</option>
+                        <option value="knee" {{#if (eq medicosEncontrado.speciality "knee")}}selected{{/if}}>Joelho</option>
+                        <option value="hand" {{#if (eq medicosEncontrado.speciality "hand")}}selected{{/if}}>Mão</option>
+                        <option value="shoulder" {{#if (eq medicosEncontrado.speciality "shoulder")}}selected{{/if}}>Ombro</option>
+                        <option value="foot"  {{#if (eq medicosEncontrado.speciality "foot")}}selected{{/if}}>Pé</option>
+                    </select>
+                </div>
+                <div class="head-turno">
+                    <label for="time">Turno</label>
+                    <select name="time">
+                        <option value="morning" {{#if (eq medicosEncontrado.time "morning")}}selected{{/if}}>Manhã</option>
+                        <option value="afternoon" {{#if (eq medicosEncontrado.time "afternoon")}}selected{{/if}}>Tarde</option>
+                        <option value="night" {{#if (eq medicosEncontrado.time "night")}}selected{{/if}}>Noite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="monday">Segunda-Feira</label>
+                    <input type="checkbox" name="monday-check"  {{#if medicosEncontrado.availability.monday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="monday-frequency" class="monday-select">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.monday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly"  {{#if (eq medicosEncontrado.availability.monday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="tuesday">Terça-Feira</label>
+                    <input type="checkbox" name="tuesday-check" {{#if medicosEncontrado.availability.tuesday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="tuesday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.tuesday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly" {{#if (eq medicosEncontrado.availability.tuesday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="wednesday">Quarta-Feira</label>
+                    <input type="checkbox" name="wednesday-check" {{#if medicosEncontrado.availability.wednesday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="wednesday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.wednesday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly" {{#if (eq medicosEncontrado.availability.wednesday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="thursday">Quinta-Feira</label>
+                    <input type="checkbox" name="thursday-check" {{#if medicosEncontrado.availability.thursday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="thursday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.thursday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly" {{#if (eq medicosEncontrado.availability.thursday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="friday">Sexta-Feira</label>
+                    <input type="checkbox" name="friday-check" {{#if medicosEncontrado.availability.friday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="friday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.friday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly" {{#if (eq medicosEncontrado.availability.friday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="saturday">Sábado</label>
+                    <input type="checkbox" name="saturday-check" {{#if medicosEncontrado.availability.saturday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="saturday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.saturday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly" {{#if (eq medicosEncontrado.availability.saturday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-dia">
+                <div class="head-dia-acording">
+                    <label for="sunday">Domingo</label>
+                    <input type="checkbox" name="sunday-check" {{#if medicosEncontrado.availability.sunday}}checked{{/if}}>
+                </div>
+                <div>
+                    <select name="sunday-frequency">
+                        <option>Selecione Frequencia</option>
+                        <option value="weekly" {{#if (eq medicosEncontrado.availability.sunday.frequency "weekly")}}selected{{/if}}>Semanal</option>
+                        <option value="biweekly"{{#if (eq medicosEncontrado.availability.monday.frequency "biweekly")}}selected{{/if}}>Quinzenal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn-add-medico-container">
+                <input type="submit" value="Enviar" class="btn-add-medico">
+            </div>
+        </form>
+    </div>
+    <div>
+        <form method="post" action="/remove/{{medicosEncontrado.id}}">
+            <input type="hidden" name="id" value="{{medicosEncontrado.id}}">
+            <input type="submit" value="Excluir">
+        </form>
+    </div>
+</div>
+
+
+
+
