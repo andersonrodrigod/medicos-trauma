@@ -8,6 +8,9 @@ const path = require('path')
 
 const app = express()
 
+const auth = require('./routes/auth.js')
+const medicos = require('./routes/medicos.js')
+
 const exphbsInstance = exphbs.create({
     extname: 'handlebars',
     helpers: handlebarsHelpers,      
@@ -55,6 +58,9 @@ app.use((req, res, next) => {
 
     next()
 })
+
+app.use('/', auth)
+app.use('/', medicos)
 
 app.listen(3000, () => {
     console.log('app rodando na porta 3000')
