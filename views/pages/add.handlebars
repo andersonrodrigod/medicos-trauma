@@ -3,124 +3,54 @@
         <div class="add-medico-title">
             <h1>Adiconar Médicos</h1>
         </div>
-        <form action="/add" method="post">
+        <form action="/adicionarmedico" method="post">
             <div class="head-trio">
                 <div class="head-medico">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" placeholder="Nome do médico" required>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Nome do médico">
                 </div>
                 <div class="head-especialidade">
-                    <label for="speciality">Especialidade</label>
-                    <select name="speciality">
-                        <option>Selecione Especialidade</option>
-                        <option value="overall">Geral</option>
-                        <option value="arm">Braço</option>
-                        <option value="knee">Joelho</option>
-                        <option value="shoulder">Mão</option>
-                        <option value="shoulder">Ombro</option>
-                        <option value="foot">Pé</option>
+                    <label for="especialidade">Especialidade</label>
+                    <select name="especialidade">
+                        <option value="geral">Geral</option>
+                        <option value="joelho">Joelho</option>
+                        <option value="mao">Mão</option>
+                        <option value="ombro">Ombro</option>
+                        <option value="pe">Pé</option>
+                        <option value="coluna">Coluna</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head-trio">
+                <div class="head-turno">
+                    <label for="dia">Dia da Semana</label>
+                    <select name="dia">
+                        <option value="domingo">Domingo</option>
+                        <option value="segunda">Segunda</option>
+                        <option value="terca">Terça</option>
+                        <option value="quarta">Quarta</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="sabado">Sábado</option>
                     </select>
                 </div>
                 <div class="head-turno">
-                    <label for="time">Turno</label>
-                    <select name="time">
-                        <option value="morning">Manhã</option>
-                        <option value="afternoon">Tarde</option>
-                        <option value="night">Noite</option>
+                    <label for="turno">Turno</label>
+                    <select name="turno">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="head-turno">
+                    <label for="frequencia">Frequência</label>
+                    <select name="frequencia">
+                        <option value="quinzenal">Quinzenal</option>
+                        <option value="semanal">Semanal</option>
                     </select>
                 </div>
             </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="monday">Segunda-Feira</label>
-                    <input type="checkbox" name="monday-check">
-                </div>
-                <div>
-                    <select name="monday-frequency" class="monday-select">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="tuesday">Terça-Feira</label>
-                    <input type="checkbox" name="tuesday-check" id="">
-                </div>
-                <div>
-                    <select name="tuesday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="wednesday">Quarta-Feira</label>
-                    <input type="checkbox" name="wednesday-check" id="">
-                </div>
-                <div>
-                    <select name="wednesday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="thursday">Quinta-Feira</label>
-                    <input type="checkbox" name="thursday-check" id="">
-                </div>
-                <div>
-                    <select name="thursday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="friday">Sexta-Feira</label>
-                    <input type="checkbox" name="friday-check" id="">
-                </div>
-                <div>
-                    <select name="friday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="saturday">Sábado</label>
-                    <input type="checkbox" name="saturday-check" id="">
-                </div>
-                <div>
-                    <select name="saturday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
-            <div class="head-dia">
-                <div class="head-dia-acording">
-                    <label for="sunday">Domingo</label>
-                    <input type="checkbox" name="sunday-check" id="">
-                </div>
-                <div>
-                    <select name="sunday-frequency">
-                        <option>Selecione Frequencia</option>
-                        <option value="weekly">Semanal</option>
-                        <option value="biweekly">Quinzenal</option>
-                    </select>
-                </div>
-            </div>
+
             <div class="btn-add-medico-container">
                 <input type="submit" value="Enviar" class="btn-add-medico">
             </div>

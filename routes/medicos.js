@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const MedicosController = require('../controllers/MedicosControllers.js')
+const MedicosControllers = require('../controllers/MedicosControllers.js')
 
-router.get('/escalamedica', MedicosController.showMedicos)
+router.get('/escalamedica', MedicosControllers.showMedicos)
+router.get('/adicionarmedico', MedicosControllers.adicionarMedico)
+router.post('/adicionarmedico', MedicosControllers.adicionarMedicoPost)
 
 module.exports = router
