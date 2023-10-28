@@ -6,5 +6,6 @@ const MedicosControllers = require('../controllers/MedicosControllers.js')
 router.get('/escalamedica', MedicosControllers.showMedicos)
 router.get('/adicionarmedico', MedicosControllers.adicionarMedico)
 router.post('/adicionarmedico', MedicosControllers.adicionarMedicoPost)
+router.get('/medicosadmin', MedicosControllers.showMedicosAdmin)
 
 module.exports = router
