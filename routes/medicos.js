@@ -7,5 +7,6 @@ router.get('/escalamedica', MedicosControllers.showMedicos)
 router.get('/adicionarmedico', MedicosControllers.adicionarMedico)
 router.post('/adicionarmedico', MedicosControllers.adicionarMedicoPost)
 router.get('/medicosadmin', MedicosControllers.showMedicosAdmin)
+router.get('/edit', MedicosControllers.edit)
 
 module.exports = router

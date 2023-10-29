@@ -57,11 +57,23 @@ module.exports = class MedicosControllers {
         const dataMedicosJson = JSON.parse(dataMedicos)
         const db = dataMedicosJson
 
-        const segunda = db.filter(medico => {
-            return medico.turno === "manha" && medico.dia === "segunda"
+        const medicosManha = db.filter((medico) => {
+            return medico.turno === "manha"
         })
         
-        console.log(segunda)
-        res.render('pages/medicosadmin')
+        const medicosTarde = db.filter((medico) => {
+            return medico.turno === "tarde"
+        })
+
+        const medicosNoite = db.filter((medico) => {
+            return medico.turno === "noite"
+        })
+        
+        console.log(medicosTarde)
+        res.render('pages/medicosadmin', {medicosManha, medicosTarde, medicosNoite})
+    }
+
+    static async edit(req, res) {
+        res.render('page/edit')
     }
 }

@@ -5,89 +5,146 @@
             <div class="dia-semana">
                 <h2>Domingo</h2>
                 <ul>
-                    <li></li>
-                </ul>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "domingo")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>     
             </div>
             <div class="dia-semana">
                 <h2>Segunda</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "segunda")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
+                
             </div>
             <div class="dia-semana">
                 <h2>Terça</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "terca")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Quarta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "quarta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Quinta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "quinta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Sexta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "sexta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Sábado</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosManha}}
+                    {{#if (eq this.dia "sabado")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
         </div>
         <h1>Tarde</h1>
         <div class="tabelas-medicas-semana">
             <div class="dia-semana">
-                    <h2>Domingo</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Domingo</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "domingo")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Segunda</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Segunda</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "segunda")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Terça</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Terça</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "terca")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Quarta</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Quarta</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "quarta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Quinta</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Quinta</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "quinta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Sexta</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Sexta</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "sexta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
             <div class="dia-semana">
-                    <h2>Sábado</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
+                <h2>Sábado</h2>
+                <ul>
+                {{#each medicosTarde}}
+                    {{#if (eq this.dia "sabado")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
+                </ul>
             </div>
         </div>
         <h1>Noite   </h1>
@@ -95,43 +152,71 @@
             <div class="dia-semana">
                 <h2>Domingo</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "domingo")}}
+                   <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Segunda</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "segunda")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Terça</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "terca")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Quarta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "quarta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Quinta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "quinta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Sexta</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "sexta")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
             <div class="dia-semana">
                 <h2>Sábado</h2>
                 <ul>
-                    <li></li>
+                {{#each medicosNoite}}
+                    {{#if (eq this.dia "sabado")}}
+                    <li><a href="/edit/{{this.id}}">{{this.nome}} ({{#if (eq this.frequencia "semanal")}}S{{else}}Q{{/if}})</a></li>
+                    {{/if}}
+                {{/each}}
                 </ul>
             </div>
         </div>

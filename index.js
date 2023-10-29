@@ -1,6 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const handlebarsHelpers = require('handlebars-helpers')
+const handlebarsHelpers = require('handlebars-helpers')()
 const session = require('express-session')
 const flash = require('express-flash')
 const FileStore = require('session-file-store')(session)
